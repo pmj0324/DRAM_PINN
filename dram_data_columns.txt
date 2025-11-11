@@ -1,0 +1,18 @@
+DRAM I-V Data
+============================================================
+Shape: (1718, 5)
+
+Columns:
+  0: spacer_length (nm)      - [15, 35]
+  1: doping_conc (cm^-3)     - [1e16, 1e17, 1e18, 1e19]
+  2: gate_length (nm)        - [5, 10, 20, 40, 80]
+  3: voltage (V)             - [-2.0, 2.0]
+  4: current (A)             - [-1.02e-16, 1.18e-05]
+
+Usage:
+  data = np.load('dram_data.npy')
+  spacer = data[:, 0]
+  doping = data[:, 1]
+  gate = data[:, 2]
+  voltage = data[:, 3]
+  current = data[:, 4]
